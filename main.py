@@ -36,3 +36,22 @@ if shapechoice == 4:
   triperimeter=a+b+c
   print("Area of a square: ",triarea)
   print("Perimeter of a square: ",triperimeter)
+
+if shapechoice == 5:
+  l=float(input("Input Length : "))
+  w=float(input("Input Width : "))
+  parea=l*w
+  pperimeter=2*(l+w)
+  print("Area of a parrelelogram: ",parea)
+  print("Perimeter of a parrelelogram: ",pperimeter)
+
+if shapechoice == 6:
+  b=float(input("Input Base : "))
+  t=float(input("Input Top : "))
+  h=float(input("Input Height : "))
+  a=float(input("Input Side 1 : "))
+  c=float(input("Input Side 2 : "))
+  traparea=0.5*(b+t)*h
+  trapperimeter=b+t+a+c
+  print("Area of a trapizium: ",traparea)
+  print("Perimeter of a trapizium: ",trapperimeter)
