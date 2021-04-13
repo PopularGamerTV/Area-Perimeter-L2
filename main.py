@@ -17,3 +17,22 @@ if shapechoice == 2:
   sperimeter=2*(l+w)
   print("Area of a square: ",sarea)
   print("Peremiter of a square: ",sperimeter)
+
+if shapechoice == 3:
+  l=float(input("Input Length : "))
+  w=float(input("Input Width : "))
+  rarea=l*w
+  rperimeter=2*(l+w)
+  print("Area of a square: ",rarea)
+  print("Peremiter of a square: ",rperimeter)
+
+if shapechoice == 4:
+  b=float(input("Input Base : "))
+  h=float(input("Input height : "))
+  a=float(input("Input Side 1 : "))
+  b=float(input("Input Side 2 : "))
+  c=float(input("Input Side 3 : "))
+  triarea=0.5*b*h
+  triperimeter=a+b+c
+  print("Area of a square: ",triarea)
+  print("Perimeter of a square: ",triperimeter)
