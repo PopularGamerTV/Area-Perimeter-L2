@@ -1,12 +1,15 @@
+import math
+
 print("Area/Perimeter Calculator")
 
+#Coding for area/perimeter of a circle
 def circle():
   r=float(input("Input Radius : "))
-  carea=3.14*r*r
-  cperemiter=2*3.14*r
+  carea= math.pi*r*r
+  cperemiter=2* math.pi*r
   print("Area of the circle: ",carea)
   print("Perimeter of the circle: ",cperemiter)
-
+#Coding for area/perimeter of a square
 def square():
   l=float(input("Input Length : "))
   w=float(input("Input Width : "))
@@ -14,15 +17,15 @@ def square():
   sperimeter=2*(l+w)
   print("Area of a square: ",sarea)
   print("Peremiter of a square: ",sperimeter)
-
+#Coding for area/perimeter of a rectangle
 def rectangle():
   l=float(input("Input Length : "))
   w=float(input("Input Width : "))
   rarea=l*w
   rperimeter=2*(l+w)
-  print("Area of a square: ",rarea)
-  print("Peremiter of a square: ",rperimeter)
-
+  print("Area of a rectangle: ",rarea)
+  print("Peremiter of a rectangle: ",rperimeter)
+#Coding for area/perimeter of a triangle
 def triangle():
   b=float(input("Input Base : "))
   h=float(input("Input height : "))
@@ -33,7 +36,7 @@ def triangle():
   triperimeter=a+b+c
   print("Area of a triangle: ",triarea)
   print("Perimeter of a triangle: ",triperimeter)
-
+#Coding for area/perimeter of a parraleleogram
 def parrelelogram():
   l=float(input("Input Length : "))
   w=float(input("Input Width : "))
@@ -41,7 +44,7 @@ def parrelelogram():
   pperimeter=2*(l+w)
   print("Area of a parrelelogram: ",parea)
   print("Perimeter of a parrelelogram: ",pperimeter)
-
+#Coding for area/perimeter of a trapezium
 def trapezium():
   b=float(input("Input Base : "))
   t=float(input("Input Top : "))
@@ -52,7 +55,7 @@ def trapezium():
   trapperimeter=b+t+a+c
   print("Area of a trapizium: ",traparea)
   print("Perimeter of a trapizium: ",trapperimeter)
-
+#Coding for when users select what shape they wish to calculate
 def choice(shapechoice):
   if shapechoice == 1:
     circle()
@@ -74,8 +77,8 @@ def choice(shapechoice):
 
 keep_going = ""
 while keep_going == "":
-
-  print("Chose a shape to calculate the area and perimeter of. #1: Circle, #2: Square, #3: Rectangle, #4: Triangle, #5: Parrelelogram, #6: Trapezium\n")
+  #Coding for asking the user if the wish to repeat the code to calculate another shape or wish to exit.
+  print("\nChose a shape to calculate the area and perimeter of. #1: Circle, #2: Square, #3: Rectangle, #4: Triangle, #5: Parrelelogram, #6: Trapezium\n")
 
   shapechoice = input("Please select number for shape to find area and perimeter:")
   shapechoice = int(shapechoice)
@@ -83,5 +86,5 @@ while keep_going == "":
   choice(shapechoice)
   
   keep_going=input("\nPress 'Enter' to continue or 'Any key' to quit>>")
-
+#Coding for when the users are finished calculating
 print("Thank you for using this calculator. Hope to see you again!")
